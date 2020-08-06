@@ -3,6 +3,6 @@
   hosts: all
 
   tasks:
-  - name: "Include role control"
+  - name: "Include role opensim-workbench"
     include_role:
-      name: "control"
+      name: "opensim-workbench"

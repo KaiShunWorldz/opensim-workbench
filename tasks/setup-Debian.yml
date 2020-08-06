@@ -1,9 +1,13 @@
 ---
+# curl          - used to send POST commands to the opensim services for testing or info
+# xmmlib-utils  - to format the output of the POST commands
+# tree          - to pringt a directory tree
+# git           - to get the opensim binaries and to do version control on Ansible playbooks and roles
+
 - name: install helper tools
   apt: 
-    name: ['curl', 'tree', 'screen', 'git', 'vsftpd', 'python3-pip', 'libssl-dev']
+    name: ['curl', 'xmllib2-utils', 'tree', 'git', 'htop', 'python3-pip', 'libssl-dev']
     state: present
-  notify: restart vsftpd
   tags: ['packages']
 
 - name: update apt cache for pip3

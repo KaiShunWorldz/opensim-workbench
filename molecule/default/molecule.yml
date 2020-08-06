@@ -7,7 +7,7 @@ lint: |
   yamllint .
   ansible-lint
 platforms:
-  - name: Molecule_Opensim_Control
+  - name: Molecule_os_workbench
     image: geerlingguy/docker-${MOLECULE_DISTRO:-ubuntu2004}-ansible:latest
     command: ""
     volumes:
