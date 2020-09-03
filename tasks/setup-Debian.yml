@@ -6,7 +6,7 @@
 
 - name: install helper tools
   apt: 
-    name: ['curl', 'xmllib2-utils', 'tree', 'git', 'htop', 'python3-pip', 'libssl-dev']
+    name: ['curl', 'xmllib2-utils', 'tree', 'net-tools', 'git', 'htop', 'python3-pip', 'libssl-dev']
     state: present
   tags: ['packages']
 
